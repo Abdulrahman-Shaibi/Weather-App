@@ -1,0 +1,38 @@
+/* color hover on temp */
+#current {
+  color: white;
+}
+#current span {
+  color: #3eb9e6;
+}
+
+#current span:hover {
+  color: white;
+}
+#current:hover {
+  color: #3eb9e6;
+}
+
+/* search btn*/
+.search-btn {
+  width: 15%;
+  cursor: pointer;
+  position: relative;
+}
+.search-btn::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 3px solid #3eb9e6;
+  transition: transform 200ms ease-in-out;
+
+  transform: scaleX(0);
+}
+
+.search-btn:hover::before,
+.search-btn:focus::before {
+  transform: scaleX(1);
+}
