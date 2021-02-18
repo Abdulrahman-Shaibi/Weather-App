@@ -16,13 +16,13 @@
                             background: linear-gradient(to top, #135058, #f1f2b5);
                             border: 3px solid black;
                             border-radius: 10px;">
-    <div class="container" style="margin: 50px auto; width: 330px; border: 3px solid #023F54; text-align: center; padding: 5px 40px 15px 40px; background:  -webkit-gradient(linear, left top, left bottom, from(#311847), to(#3EB9E6)); border-radius: 20px;">
+    <div class="container" style="margin: 10px auto; width: 330px; border: 3px solid #023F54; text-align: center; padding: 5px 40px 15px 40px; background:  -webkit-gradient(linear, left top, left bottom, from(#311847), to(#3EB9E6)); border-radius: 20px;">
 
 
         <!-- nav bar  -->
         <nav style="display: flex; justify-content: space-between;">
             <div><h4 style="color: #F2F2F2;">09:40</h4></div>
-            <div style="align-self: center;"><img src="/img/mobile nav.png" alt="mobile-nav-img"></div>
+            <div style="align-self: center;"><img src="img/mobile nav.png" alt="mobile-nav-img"></div>
         </nav>
 
         <!-- FORM  -->
@@ -30,7 +30,7 @@
         <form>
             <div class="search-bar" style="border-radius: 10px; border: 1px solid white; padding:5px 10px; display: flex; align-items: center; justify-content: space-around;">
             
-                <input type="text" name="" placeholder="Enter City" style="text-align: center; ">
+                <input class="city-input" type="text" name="" placeholder="Enter City" style="text-align: left; height:20px; width: 80%; font-size:19px; padding: 5px; border-radius: 5px; outline: none; color: #3EB9E6;">
                 <div class="search-btn">
                 <img src="/img/search-icon.svg" style=" width: 40px;" alt="">
                 </div>
@@ -41,39 +41,53 @@
         <!-- CITY & WEATHER -->
         
         <div class="showcase" style="color: white;">
-            <h1 style="font-size: 60px; ">JEDDAH</h1>
-            <p>Mostly Clouds</p>
+            <h1 class="title" style="font-size: 60px; ">Enter City</h1>
+            <div class="weather-icon">
+                <img class="icon" src="img/Weather Homescreen icon.gif" alt="Icon-Weather" style="width: 100px
+                ;">
+            </div>
+            <p class="discription" style="margin: 0;" >Cuddle 🤗 Weather</p>
         </div>
 
         <!-- TEMPERATURE -->
-        <div class="temp" >
-
-            <div id="current"  
-            style="transition: color 1s ease-out; cursor: pointer; font-size: 120px;"> 20<sup>°</sup><span id="tempSpan" style="transition: color 1s ease-out;">F</span></div>
-
-
-
-            <div style="color: white;">
-
-                <div id="min">19<sup>°</sup>min</div>
-
-                <hr style="width: 20%;">
-
-                <div id="max">20<sup>°</sup>max</div>
-
+        <div class="temprature" >
+            <div class="temp">
+                <h1 id="current">1</h1>
+                <h1 id="temp-sign">&#176;</h1>
+                <h2 id="degree">C</h2>
             </div>
 
-
-
+            <div class="max-min" style="color: white;">
+                <div class="max">
+                    <p style="font-weight: bold;">4</p>
+                    <sup>°</sup>
+                    <p>max temp</p>
+                </div>
+                <hr style="width: 20%;">
+                <div class="min">
+                    <p style="font-weight: bold;">1</p>
+                    <sup>°</sup>
+                    <p>min temp</p>
+                </div>
+            </div>
         </div> 
 
         <!-- INFO -->
-        <div class="info" style="border-radius: 10px; padding: 20px; color:antiquewhite; border: 3px solid white;  text-align: center; margin-top: 20px;">
-            <div>wind 2.1 m/s</div>
-            <div>Humidty 93%</div>
-            <div>Pressure 991 hpa</div>
-        </div>
-        <img src="/img/weather-icon.png" width="100px" alt="">
+        <div class="info" style="border-radius: 10px; padding: 5px; color:antiquewhite; border: 3px solid white;  text-align: center; margin-top: 20px; align-items: center;">
+            
+            <div class="wind" style="display: flex; align-items: center; justify-content:center;">
+                <h3>wind <span style="color: #2f3b42;">2.1</span> m/s </h3>
+                <img style="padding-left: 15px;" src="/img/wind.svg" alt="wind-icon">
+            </div>
+            <div class="humidty" style="display: flex; align-items: center; justify-content:center;">
+                <h3>Humidty <span style="color: #2f3b42;">93</span> % </h3>
+                <img style="padding-left: 15px;" src="/img/humidity.svg" alt="humidity-icon"></div>
+            <div class="pressure" style="display: flex; align-items: center; justify-content:center;">
+                <h3>Pressure <span style="color: #2f3b42;">991</span> hpa </h3>
+                <img style="padding-left: 15px;" src="/img/pressure.svg" alt="pressure-icon"></div>
+            </div>
+        
+        
         
         <footer>
             <span 

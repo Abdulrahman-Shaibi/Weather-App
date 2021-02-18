@@ -36,3 +36,53 @@
 .search-btn:focus::before {
   transform: scaleX(1);
 }
+
+.showcase h1 {
+  margin: 40px 0 0 0;
+}
+.showcase p {
+  font-size: 22px;
+}
+
+.temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.temp h1 {
+  margin: 20px 0;
+  transition: color 1s ease-out;
+  cursor: pointer;
+}
+
+.temprature #temp-sign,
+.temp h2 {
+  color: #3eb9e6;
+}
+
+.max-min {
+  font-size: larger;
+}
+.max,
+.min {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.max p,
+sup,
+.min p,
+sup {
+  margin: 0;
+}
+
+/* .temp #current {
+  transition: color 1s ease-out;
+  cursor: pointer;
+  font-size: 120px;
+}
+.temp #tempSpan {
+  transition: color 0.5s ease-out;
+} */
