@@ -13,6 +13,21 @@
   color: #3eb9e6;
 }
 
+.container {
+  box-shadow: 0 0 50px #202020;
+  margin: 10px auto;
+  width: 330px;
+  text-align: center;
+  padding: 5px 40px 15px 40px;
+  border-radius: 20px;
+}
+
+.temprature {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 /* search btn*/
 .search-btn {
   width: 15%;
