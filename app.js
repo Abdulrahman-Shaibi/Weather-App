@@ -14,6 +14,7 @@ const degree = document.getElementById('degree');
 
 
 const fetchWeatherApi = () => {
+  title.innerHTML = 'Loading..'
   const weatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&units=metric&appid=259b6a69ebf88ecbf51aca2e8418db8e`
   // Fetching API index 
   fetch(weatherUrl)
